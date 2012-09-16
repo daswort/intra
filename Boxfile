@@ -19,3 +19,11 @@ web1:
 db1:
   name: intra
   type: mysql
+
+worker1:
+  type: php
+  exec: "php /var/www/composer.phar self-update"
+
+worker2:
+  type: php
+  exec: "php /var/www/composer.phar install"
