@@ -16,8 +16,8 @@ web1:
     - eaccelerator
   php_date_timezone: "America/Santiago"
   after_deploy:
-    - "php /var/www/composer.phar self-update"
-    - "php /var/www/composer.phar install"
+    - "php composer.phar self-update"
+    - "php composer.phar install"
 
 db1:
   name: intra
