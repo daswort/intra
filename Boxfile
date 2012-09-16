@@ -17,5 +17,5 @@ web1:
   php_date_timezone: "America/Santiago"
 
   db1:
-  name: intra
-  type: mysql
+    name: intra
+    type: mysql
