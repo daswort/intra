@@ -1,0 +1,70 @@
+<?php echo $this->doctype(); ?>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge,chrome=1'); ?>
+
+    <!-- Le styles -->
+    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'))
+                    ->prependStylesheet($this->basePath() . 'css/normalize.css')
+                    ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                    ->prependStylesheet($this->basePath() . '/css/style.css')
+                    ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css'); ?>
+
+    <!-- Scripts -->
+    <?php echo $this->headScript()->prependFile($this->basePath() . '/js/vendor/modernizr-2.6.2.min.js') ?>
+
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">Est&aacutes usando un navegador desactualizado. <a href="http://browsehappy.com/">Actualiza tu navegador ahora</a> o <a href="http://www.google.com/chromeframe/?redirect=true">instala Google Chrome </a> para una mejor experiencia.</p>
+    <![endif]-->
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Skeleton Application') ?></a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <?php echo $this->content; ?>
+
+      <hr>
+
+      <footer>
+        
+      </footer>
+
+    </div> <!-- /container -->
+    <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                  ->prependFile($this->basePath() . '/js/vendor/jquery-1.8.1.min.js')
+                                  ->prependFile($this->basePath() . '/js/plugin.js')
+                                  ->prependFile($this->basePath() . '/js/main.js');
+                                   ?>
+
+  <?php echo $this->inlineScript() ?>
+  </body>
+</html>
