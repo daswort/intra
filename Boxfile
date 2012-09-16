@@ -16,6 +16,6 @@ web1:
     - eaccelerator
   php_date_timezone: "America/Santiago"
 
-  db1:
-    name: intra
-    type: mysql
+db1:
+  name: intra
+  type: mysql
