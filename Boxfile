@@ -15,15 +15,10 @@ web1:
     - phar
     - eaccelerator
   php_date_timezone: "America/Santiago"
+  after_build:
+    - "php /var/www/composer.phar self-update"
+    - "php /var/www/composer.phar install"
 
 db1:
   name: intra
   type: mysql
-
-worker1:
-  type: php
-  exec: "php /var/www/composer.phar self-update"
-
-worker2:
-  type: php
-  exec: "php /var/www/composer.phar install"
