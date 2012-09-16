@@ -15,7 +15,7 @@ web1:
     - phar
     - eaccelerator
   php_date_timezone: "America/Santiago"
-  after_build:
+  after_deploy:
     - "php /var/www/composer.phar self-update"
     - "php /var/www/composer.phar install"
 
