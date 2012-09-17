@@ -14,7 +14,7 @@
 return array(
     'db' => array(
         'driver'         => 'Pdo',
-        'dsn'            => 'mysql:dbname=intra;host=tunnel.pagodabox.com:3306',
+        'dsn'            => 'mysql:dbname=intra;host=tunnel.pagodabox.com',
         'driver_options' => array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
         ),
