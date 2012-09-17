@@ -10,14 +10,109 @@ web1:
   document_root: public/
   php_version: 5.3.10
   php_extensions:
-    - pdo_mysql
-    - gd
-    - phar
+    - amqp
+    - apc
+    - apm
+    - bcmath
+    - bcompiler
+    - bz2
+    - calendar
+    - ctype
+    - curl
+    - dba
+    - dom
     - eaccelerator
+    - enchant
+    - exif
+    - fileinfo
+    - filter
+    - ftp
+    - gd
+    - gender
+    - geoip
+    - gettext
+    - gmp
+    - gnupg
+    - hash
+    - htscanner
+    - http
+    - iconv
+    - igbinary
+    - imagick
+    - imap
+    - interbase
+    - intl
+    - ixed
+    - json
+    - ldap
+    - lzf
+    - magickwand
+    - mbstring
+    - mcrypt
+    - memcached
+    - memcache
+    - mogilefs
+    - mongo
+    - mssql
+    - mysqli
+    - mysql
+    - ncurses
+    - newt
+    - oauth
+    - parsekit
+    - pcntl
+    - pdo_dblib
+    - pdo_firebird
+    - pdo_mysql
+    - pdo_pgsql
+    - pdo
+    - pdo_sqlite
+    - pgsql
+    - phar
+    - phpwkhtmltox
+    - posix
+    - pspell
+    - radius
+    - rar
+    - readline
+    - recode
+    - redis
+    - session
+    - shmop
+    - simplexml
+    - snmp
+    - soap
+    - sockets
+    - sphinx
+    - sqlite
+    - ssh2
+    - stats
+    - stomp
+    - svn
+    - sysvmsg
+    - sysvsem
+    - sysvshm
+    - tidy
+    - timezonedb
+    - tokenizer
+    - txforward
+    - uploadprogress
+    - wddx
+    - xattr
+    - xcache
+    - xhprof
+    - xmlreader
+    - xmlrpc
+    - xml
+    - xmlwriter
+    - xsl
+    - yaml
+    - ZendGuardLoader
+    - zip
+  zend_extensions:
+    - ioncube_loader
+    - xdebug
   php_date_timezone: "America/Santiago"
-  after_deploy:
-    - "php composer.phar self-update"
-    - "php composer.phar install"
 
 db1:
   name: intra
