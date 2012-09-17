@@ -10,7 +10,7 @@ twitter bootstrap, modernizr y otras utilidades.
 Instalación
 ------------
 
-Usanso GIT
+Usando GIT
 --------------------
 
     git clone git://github.com/daswort/intra.git
